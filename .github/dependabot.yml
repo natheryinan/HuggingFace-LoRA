@@ -1,0 +1,13 @@
+version: 2
+updates:
+  # Python dependencies (requirements.txt / setup.cfg / pyproject.toml)
+  - package-ecosystem: "pip"
+    directory: "/"
+    schedule:
+      interval: "weekly"
+
+  # GitHub Actions security updates
+  - package-ecosystem: "github-actions"
+    directory: "/"
+    schedule:
+      interval: "weekly"
